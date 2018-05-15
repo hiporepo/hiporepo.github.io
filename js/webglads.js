@@ -7,7 +7,7 @@ window.SkipAd = function() {
     }
 
     if (!stop)
-        setTimeout(window.SkipAd, 1);
+        setTimeout(window.SkipAd, 500);
 }
 
 window.ShowAd = function() {
@@ -20,13 +20,13 @@ window.ShowAd = function() {
     }
 
     if (!stop)
-        setTimeout(window.ShowAd, 0);
+        setTimeout(window.ShowAd, 500);
 }
 
 window.LoadAd = function() {
 
     //console.log('window.LoadAd');
-    var stop = true;
+    var stop = false;
     if (typeof jQuery !== 'undefined') {
         stop = true;
         checkAndLoadAdvert();
@@ -34,7 +34,7 @@ window.LoadAd = function() {
     }
 
     if (!stop)
-        setTimeout(window.LoadAd, 0);
+        setTimeout(window.LoadAd, 500);
 }
 
 function insertAdvert() {
